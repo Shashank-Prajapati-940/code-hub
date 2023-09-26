@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(255,175,189);
+  background: linear-gradient(90deg, rgba(255,175,189,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  overflow: hidden;
+}
+.listItem:hover {
+  background: #e2e8f0;
+  cursor: pointer;
+}
+
+.github-corner svg {
+  position:absolute;
+  right:0;
+  top:0;
+  mix-blend-mode:darken;
+  color:#ffffff;
+  fill:#000000;
+}
+.github-corner:hover .octo-arm {
+  animation:octocat-wave .56s;
+}
+@keyframes octocat-wave {
+  0%, 100% {
+    transform:rotate(0);
+  }
+  20%, 60% { 
+    transform:rotate(-20deg);
+  
+  } 40%, 80% {
+    transform:rotate(10deg);
+  }
+}
